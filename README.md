@@ -61,6 +61,9 @@ VigiAR---DataSquad/
 │   ├── ETL-2024/           → Pipeline de extração e tratamento (2024)
 │   └── ETL-2025/           → Pipeline de extração e tratamento (2025)
 │
+├── Dashboard/
+│   └── VigiAr_Painel.html  → Painel analítico (em fase de teste)
+│
 ├── .gitignore               → Arquivos pesados não versionados (ver seção "Fontes de dados")
 └── README.md                 → Este arquivo
 ```
@@ -94,6 +97,12 @@ O projeto utiliza exclusivamente **dados públicos**, provenientes de:
 A base já processada cobre os anos de **2024 e 2025**, agregada por município e semana epidemiológica, com granularidade de **regional de saúde** (28 GVEs) — escolhida após testes que mostraram desempenho superior a uma divisão por macrorregiões.
 
 > ⚠️ **Sobre os dados brutos não incluídos:** dois arquivos de origem ultrapassam o limite de tamanho aceito pelo GitHub e por isso não estão neste repositório — `Srag_2024.csv` (~300 MB) e `cnes_estabelecimentos_2025.json` (~640 MB). Eles podem ser baixados diretamente das fontes oficiais (SIVEP-Gripe e CNES) ou regerados a partir dos scripts em `ETL/`.
+
+## 📈 Dashboard
+
+Um painel analítico em HTML (`Dashboard/VigiAr_Painel.html`) está disponível para download no repositório, reunindo as principais visualizações do projeto.
+
+> 🧪 **Fase de teste:** o painel ainda está em desenvolvimento e passando por ajustes. A versão oficial e definitiva será entregue via **Oracle APEX**.
 
 ## 🚀 Como executar
 
